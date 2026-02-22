@@ -1,79 +1,125 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F1F5F9;
-    color: #0F172A;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F1F5F9;
+    color: #0F172A;
+    line-height: 1.6;
+}
+
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 8%;
     background-color: #0F172A;
     color: white;
 }
 
 .logo {
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 nav a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
     color: white;
     font-size: 0.95rem;
+    transition: 0.3s ease;
 }
 
+nav a:hover {
+    color: #7C3AED;
+}
+
+/* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 10%;
 }
 
 .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #475569;
 }
 
 .btn {
     background-color: #7C3AED;
     color: white;
-    padding: 12px 25px;
+    padding: 14px 30px;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
+.btn:hover {
+    background-color: #5B21B6;
+    transform: translateY(-2px);
+}
+
+/* PILLARS */
 .pillars {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    padding: 60px 20px;
+    gap: 30px;
+    padding: 70px 8%;
     flex-wrap: wrap;
 }
 
 .card {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
-    width: 280px;
+    padding: 35px 25px;
+    border-radius: 15px;
+    width: 300px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #64748B;
+    margin-bottom: 20px;
 }
 
 .card-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 18px;
+    padding: 10px 20px;
     background: #7C3AED;
     color: white;
     text-decoration: none;
     border-radius: 6px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
 }
 
+.card-btn:hover {
+    background: #5B21B6;
+}
+
+/* PAGE CONTENT */
 .page {
-    padding: 60px 20px;
-    max-width: 800px;
+    padding: 80px 10%;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -81,23 +127,46 @@ nav a {
     margin-bottom: 30px;
 }
 
-.page ul {
-    list-style: none;
-    padding: 0;
-}
-
 .page li {
     background: white;
     margin-bottom: 15px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background-color: #0F172A;
     color: white;
-    margin-top: 40px;
+    margin-top: 60px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .pillars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
 }
