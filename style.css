@@ -1,1 +1,103 @@
-s
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F1F5F9;
+    color: #0F172A;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #0F172A;
+    color: white;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #7C3AED;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.pillars {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: #7C3AED;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.page {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.page h1 {
+    margin-bottom: 30px;
+}
+
+.page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.page li {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0F172A;
+    color: white;
+    margin-top: 40px;
+}
