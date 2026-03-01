@@ -1,1 +1,1 @@
-console.log("HerSphere Loaded Successfully");
+console.log("Her-Sphere Loaded Successfully");
